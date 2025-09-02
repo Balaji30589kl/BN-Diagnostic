@@ -4,8 +4,8 @@ const LAB_INFO = {
   tagline: "Your Trusted Healthcare Partner",
   description: "Professional diagnostic services with state-of-the-art equipment and experienced medical professionals. Quick results, accurate testing, comprehensive care.",
   address: "123 Main Road, Medical District, City Name - 123456",
-  phone: "+91-9668784201",
-  whatsapp: "+919668784201",
+  phone: "+91-6372457414",
+  whatsapp: "+916372457414",
   email: "info@bndiagnostic.com",
   hours: "Mon-Sat: 7:00 AM - 8:00 PM, Sun: 8:00 AM - 6:00 PM"
 };
