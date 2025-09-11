@@ -465,3 +465,35 @@ document.addEventListener('DOMContentLoaded', function() {
         setupDoctorsEventListeners();
     }
 });
+
+
+
+// Page Loading Animation
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('load', function() {
+    setTimeout(() => {
+      const pageLoader = document.getElementById('page-loader');
+      if (pageLoader) {
+        pageLoader.classList.add('fade-out');
+        setTimeout(() => {
+          pageLoader.remove();
+        }, 500);
+      }
+    }, 800);
+  });
+
+  // Add fade-in to sections
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    section.classList.add('fade-in');
+    observer.observe(section);
+  });
+});
